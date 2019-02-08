@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Ruta</title>
+
+	<link rel="stylesheet" type="text/css" href="bt/css/btmx.css">
+	
+	<script src="https://google-developers.appspot.com/_static/js/jquery-bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj3tSLJKC-J_OBLixxf-yk-Mhve0SCNd8&libraries=drawing,places"></script>
+	
+	<script src="bt/js/maps.js"></script>
+	<script src="bt/js/route.js"></script>
+	
+  </head>
+  <body>
+  
+	<table style="margin:auto; width:100%;">
+		<tr>
+			<td style="width:33%;">
+				<div id="routeInfo" style="margin:auto; width:100%;"></div>
+				<table id="infoLeft" class="btmx" style="text-align:left !important; margin:auto; width:100%;"></table>
+				<table id="infoLeftH" style="margin:auto; width:100%; display: none;"></table>
+			</td>
+			<td style="width:67%;">								
+				<div id="btmx_wrapper">
+				   <div id="map" style="margin:auto;  min-height: 700px; width:100%;"></div>
+
+				   <div id="btmx_over_map">
+						<form id="geoform" align="center" method="post">
+							<table style="margin:auto;">
+						<tr>
+						<td><select id="route" onchange="bustracker(document.getElementById('route').value)" ><option value="0">Seleccione su Ruta</option></select></td>
+						<td></td>
+					</tr>
+							</table>
+						</form>
+				   </div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+	</table>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+
+
+.btmx td {
+    text-align: left;
+}
+
+
+#btmx_wrapper { 
+	position: relative; 
+}
+
+
+#btmx_over_map { 
+	position: absolute; 
+	top: 10px; 
+	left: 10px; 
+	z-index: 99; 
+}
+
+
+#btmx_over_map select {
+    font-size: 16px;
+    border: solid;
+    border-width: 1px;
+    background-color: rgba(255,255,255,0.7);
+    border-color: #999999;
+}
